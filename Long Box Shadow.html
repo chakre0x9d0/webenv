@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Long Box Shadow</title>
+    <link rel="stylesheet" href="Long Box Shadow.css">
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        /*javascript code I have no idea*/
+        let box= document.querySelector('.box');
+        let shadow = '';
+        for (var i=0; i<200; i++)
+        {
+            shadow += (shadow? ',':'')+ i*1+'px ' + i*1+'px 0 #e8305b';
+        }
+        box.style.boxShadow = shadow;
+    </script>
+</body>
+</html>
